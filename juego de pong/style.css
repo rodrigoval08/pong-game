@@ -1,0 +1,16 @@
+body {
+    display: flex; /* Utiliza flexbox para el diseño del contenedor */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Establece la altura del contenedor al 100% de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    background-color: #0000ff; /* Cambia el color de fondo a azul */
+  }
+  canvas {
+      width: 800px;
+      height: 600px;
+  }
+  
+  #canvasJuego {
+    border: 2px solid #fff; /* Añade un borde blanco de 2 píxeles alrededor del canvas */
+  }

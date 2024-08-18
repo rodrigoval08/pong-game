@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Pong</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+        }
+        canvas{
+            background-color: #222;
+            padding: auto;
+        }
+        .pantalla {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        } 
+        .pantalla.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="pantallaInicio" class="pantalla active">
+        <h1>Juego de Pong</h1>
+        <button id="comenzarJuego">Iniciar</button>
+    </div>
+    <div id="pantallaFin" class="pantalla">
+        <h1>Fin del Juego</h1>
+        <p id="mensajeFin"></p>
+        <button id="reiniciarJuego">Reiniciar</button>
+    </div>
+    <canvas id="canvasJuego" width="800" height="600"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
